@@ -25,12 +25,12 @@
                 <div class="header__navbar-block">
 
                     <h3 class="header__navbar-block_logo-text">
-                        loremipsum.<span class="header__navbar-block_logo-text-element">net</span>
+                        <a href="index.html">loremipsum.<span class="header__navbar-block_logo-text-element">net</span></a>
                     </h3>
 
                     <ul class="header__navbar-block_navbar-menu">
-                        <a href="#main"><li class="header__navbar-block_navbar-menu_item">бизнес</li></a>
-                        <a href="#"><li class="header__navbar-block_navbar-menu_item">о нас</li></a>
+                        <a href="#"><li class="header__navbar-block_navbar-menu_item">бизнес</li></a>
+                        <a href="#footer"><li class="header__navbar-block_navbar-menu_item">о нас</li></a>
                         <a href="#"><li class="header__navbar-block_navbar-menu_item">цены</li></a>
                         <a href="#"><li class="header__navbar-block_navbar-menu_item">оформить заказ</li></a>
                     </ul>
@@ -69,7 +69,7 @@
                     
 
                     <div class="header__header-buttons-block">
-                        <a href="#"><div class="header__header-buttons-block_button">Заказать</div></a>
+                        <a href="#main"><div class="header__header-buttons-block_button">Заказать</div></a>
                         <a href="#"><div class="header__header-buttons-block_button">Подробнее</div></a>
                     </div>
 
@@ -110,7 +110,7 @@
 
 
                         <div class="main__main-blocks_scheme-blocks_scheme-block">
-                            <img src="/materials/main/secondIcon.svg" alt="img" class="main__scheme-blocks_scheme-block_scheme-block-image">
+                            <img src="/materials/main/secondIcon.svg" alt="img" class="main__main-blocks_scheme-blocks_scheme-block_scheme-block-image">
                             <p class="main__main-blocks_scheme-blocks_scheme-block_scheme-block-subtitle">Сonsecteturadipiscing elit</p>
                         </div>
                         <img src="/materials/main/dot.svg" alt="dot" class="main__main-blocks_scheme-blocks_scheme-block-dot-item">
@@ -151,7 +151,7 @@
 
                     <div class="main__main-blocks_user-info-block">
 
-                        <form action="#" method="POST">
+                        <form action="#" method="POST" enctype="multipart/form-data">
 
                             <div class="main__main-blocks_user-info-block_adaptive-input-block">
                                 <div class="main__main-blocks_user-info-block_adaptive-input-block_text-fields">
@@ -178,13 +178,20 @@
                                     
                                 </div>
                                 <div class="main__main-blocks_user-info-block_range-block">
-                                    <p class="main__main-blocks_user-info-block_range-block_subtitle">Sed ut perspiciatis, unde omnis iste natus</p>
-                                    <p class="main__main-blocks_user-info-block_range-block_percent">0%</p>
-                                    <input type="range" name="main__main-blocks_user-info-block_user-range" id="main__main-blocks_user-info-block_user-percent" onchange="showPrecent()">
-                                    <input type="file" name="main__main-blocks_user-info-block_user-file" id="main__main-blocks_user-info-block_user-file" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" value="прикрепить файл">
+                                    <div class="main__main-blocks_user-info-block_range-block_align-block">
+                                        <div class="main__main-blocks_user-info-block_range-block_text-block">
+                                            <p class="main__main-blocks_user-info-block_range-block_subtitle">Sed ut perspiciatis, unde omnis iste natus</p>
+                                            <p class="main__main-blocks_user-info-block_range-block_percent">0%</p>
+                                        </div>
+                                        <input type="range" name="main__main-blocks_user-info-block_user-range" id="main__main-blocks_user-info-block_user-percent" onchange="showPrecent()" min="0" max="100" step="1">
+                                    </div>
+                                    <label class="input-file">
+                                        <input type="file" name="main__main-blocks_user-info-block_user-file" id="main__main-blocks_user-info-block_user-file" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" value="прикрепить файл">
+                                        <span class="input-file-btn">Прикрепить файл</span>
+                                    </label>
                                 </div>
                                 
-                                <input type="submit" value="отправить" class="main__main-blocks_user-info-block_adaptive-input-block__input-item">
+                                <input type="submit" value="отправить" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" id="main__main-blocks_user-info-block_adaptive-input-block__input-item_send-button">
                                                         
                             </div>
 
@@ -203,34 +210,35 @@
 
     <footer class="footer" id="footer">
         <div class="conteiner">
+            <div class="footer__align-block">
+                <p class="footer__copyright-text">  
+                    © 2018 «LoremIpsum.net» Все права защищены.
+                </p>
 
-            <p class="footer__copyright-text">
-                © 2018 «LoremIpsum.net» Все права защищены.
-            </p>
+                <div class="footer__payment-links-blocks">
+                    <a href="https://qiwi.com/" class="footer__link"><div class="footer__payment-links-blocks_link-block">
+                        <img src="/materials/footer/qiwiIcon.svg" alt="qiwiWallet" class="footer__payment-links-blocks_link-block_link-icon">
+                        <p class="footer__payment-links-blocks_link-block_link-text">Qiwi wallet</p>
+                    </div></a>
+                    <a href="https://yoomoney.ru/" class="footer__link"><div class="footer__payment-links-blocks_link-block">
+                        <img src="/materials/footer/yandexMoneyIcon.svg" alt="yandexMoney" class="footer__payment-links-blocks_link-block_link-icon">
+                        <p class="footer__payment-links-blocks_link-block_link-text">Yandex Money</p>
+                    </div></a>
+                    <a href="https://www.webmoney.ru/" class="footer__link"><div class="footer__payment-links-blocks_link-block">
+                        <img src="/materials/footer/webMoneyIcon.svg" alt="webMoney" class="footer__payment-links-blocks_link-block_link-icon">
+                        <p class="footer__payment-links-blocks_link-block_link-text">Web Money</p>
+                    </div></a>
+                </div>
 
-            <div class="footer__payment-links-blocks">
-                <div class="footer__payment-links-blocks_link-block">
-                    <img src="#" alt="qiwiWallet" class="footer__payment-links-blocks_link-block_link-icon">
-                    <p class="footer__payment-links-blocks_link-block_link-text">Qiwi wallet</p>
-                </div>
-                <div class="footer__payment-links-blocks_link-block">
-                    <img src="#" alt="yandexMoney" class="footer__payment-links-blocks_link-block_link-icon">
-                    <p class="footer__payment-links-blocks_link-block_link-text">Yandex Money</p>
-                </div>
-                <div class="footer__payment-links-blocks_link-block">
-                    <img src="#" alt="webMoney" class="footer__payment-links-blocks_link-block_link-icon">
-                    <p class="footer__payment-links-blocks_link-block_link-text">Web Money</p>
-                </div>
-            </div>
-
-            <div class="footer__social-network-links-blocks">
-                <div class="footer__social-network-links-blocks_link-block">
-                    <img src="#" alt="ourMail" class="footer__social-network-links-blocks_link-block_link-icon">
-                    <p class="footer__social-network-links-blocks_link-block_link-text">info@ipsum228.com</p>
-                </div>
-                <div class="footer__social-network-links-blocks_link-block">
-                    <img src="#" alt="ourMail" class="footer__social-network-links-blocks_link-block_link-icon">
-                    <p class="footer__social-network-links-blocks_link-block_link-text">Мы вконтакте</p>
+                <div class="footer__social-network-links-blocks">
+                    <a href="https://mail.google.com/" class="footer__link"><div class="footer__social-network-links-blocks_link-block">
+                        <img src="/materials/footer/mailIcon.svg" alt="ourMail" class="footer__social-network-links-blocks_link-block_link-icon">
+                        <p class="footer__social-network-links-blocks_link-block_link-text">info@ipsum228.com</p>
+                    </div></a>
+                    <a href="https://vk.com/" class="footer__link"><div class="footer__social-network-links-blocks_link-block">
+                        <img src="/materials/footer/VKIcon.svg" alt="ourVK" class="footer__social-network-links-blocks_link-block_link-icon">
+                        <p class="footer__social-network-links-blocks_link-block_link-text">Мы вконтакте</p>
+                    </div></a>
                 </div>
             </div>
 
