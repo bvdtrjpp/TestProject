@@ -16,6 +16,7 @@
     }
     .main__main-blocks_user-info-block_adaptive-input-block{
 
+        width: 100%;
         gap: 10px;
 
     }
@@ -534,6 +535,7 @@
     .main__main-blocks_user-info-block_adaptive-input-block_text-fields,
     .main__main-blocks_user-info-block_range-block,
     .main__main-blocks_user-info-block,
+    .main__main-blocks_user-info-block_adaptive-input-block,
     .main__main-blocks_user-info-block_adaptive-input-block__input-item{
 
         width: 95%;
