@@ -20,6 +20,8 @@ a{
 
 body{
 
+    width: 100vw;
+
     color: white;
     font-size: 14px;
     font-family: Lato;
