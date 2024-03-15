@@ -368,6 +368,16 @@
         font-size: 1em;
         
     }
+
+    .main__main-blocks_user-info-block_range-block_align-block{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+    
+    }
     
 
     .main__main-blocks_scheme-blocks{

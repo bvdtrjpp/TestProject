@@ -18,12 +18,9 @@
     <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/materials/header/header.style.css">
     <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/materials/main/main.style.css">
     <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/materials/footer/footer.style.css">
-    <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/header.dropdown.menu.css">
+    <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/TestProject/header.dropdown.menu.css">
 
-    <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/materials/header/header.style.css">
-    <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/materials/main/main.style.css">
-    <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/materials/footer/footer.style.css">
-    <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/header.dropdown.menu.css">
+
 
 
     <link rel="stylesheet" href="https://bvdtrjpp.github.io/TestProject/media.css">
@@ -207,10 +204,10 @@
                                             <p class="main__main-blocks_user-info-block_range-block_subtitle">Sed ut perspiciatis, unde omnis iste natus</p>
                                             <p class="main__main-blocks_user-info-block_range-block_percent" id="range-block_percent">0%</p>
                                         </div>
-                                        <input type="range" name="user-range" id="main__main-blocks_user-info-block_user-percent"  onmousemove="showPrecent(this.value)" min="0" max="100" step="1" value="0">
+                                        <input type="range" name="user-range" id="main__main-blocks_user-info-block_user-percent"  onmousemove="showPrecent(this.value)"  min="0" max="100" step="1" value="0">
                                     </div>
                                     <div id="main__main-blocks__file-button" style="width: 100%;">
-                                        <input type="file" name="user-file" id="main__main-blocks_user-info-block_user-file" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" value="прикрепить файл">
+                                        <input type="file" name="user-file" id="main__main-blocks_user-info-block_user-file" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" accept="image/jpeg, image/png, image/gif" value="прикрепить файл">
                                         <span class="main__main-blocks_user-info-block_adaptive-input-block__input-item-file"><img src="https://bvdtrjpp.github.io/TestProject/materials/main/file.submit.button.svg" alt="icon" height="20px" width="17px">Прикрепить файл</span>
                                     </div>
                                 </div>
@@ -269,6 +266,15 @@
 
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://bvdtrjpp.github.io/TestProject/script.js">
+
+        function showPrecent(val){
+
+            let precentText = document.getElementById('range-block_percent');
+            precentText.innerHTML = val + '%';
+
+        };
+
+    </script>
 </body>
 </html>

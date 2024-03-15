@@ -87,7 +87,7 @@ main{
 
 .main__main-blocks_scheme-blocks_scheme-block_scheme-block-image:hover{
 
-    transform: scale(1.3);
+    transform: scale(1.1);
     cursor: pointer;
 
 }
@@ -186,10 +186,14 @@ input[type=range]::-webkit-slider-thumb {
   }
 
 .main__main-blocks_user-info-block_range-block{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+   
+    
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    align-items: center;
+
+
 
 }
 
@@ -197,6 +201,9 @@ input[type=range]::-webkit-slider-thumb {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     gap: 10px;
 
 }
