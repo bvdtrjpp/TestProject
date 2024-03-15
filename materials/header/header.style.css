@@ -1,134 +1,88 @@
 .header{
-
-    
-    height: 100vh;
-
+   height: 100vh;
     background: url('https://bvdtrjpp.github.io/TestProject/materials/header/header.background.svg') no-repeat;
     background-position-x: center;
     background-size: cover;
-
-
 }
 
 .header__navbar{
-
     width: 100vw;
     height: 6.25em;
-
     background-color: rgba(16, 16, 29, 0.9);
     position: fixed;
-
     z-index: 2;
 }
 
 .header__navbar-block{
-
     width: inherit;
     height: inherit;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header__navbar-block_logo-text{
-    
     font-family: Raleway;
     font-weight: 800;
     font-size: 1.75rem;
     text-transform: uppercase;
-
 }
 
 .header__navbar-block_logo-text-element{
     color: #42A9ED;
 }
 
-
-
 .header__navbar-block_navbar-menu{
-
     list-style: none;
-
     display: flex;
-
 }
 
 .header__navbar-block_navbar-menu_item{
-
     color: white;
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 0.8125rem;
     text-transform: uppercase;
-    
     transition: 0.5s;
-
     padding: 30px;
 }
 
 .header__navbar-block_navbar-menu_item:hover{
-
     color: #43ABF0;
     cursor: pointer;
     box-shadow: white;
 }
 
-
-
-/*---------------------------------------------------------*/
-
-
-
 .header__align-items-block{
-
     width: inherit;
     height: inherit;
-
     display: flex;
-
     align-items: center;
-
 }
 
 .header__header-text-block{
-
     width: 630px;
-
     display: flex;
     flex-direction: column;
     gap: 3em;
-
     font-family: Lato;
     color: black;
-
 }
 
 .header__header-text-block_text-title{
-
-
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
-
-
 }
 
 .header__header-text-block_text-title_element{
-
     color: #3E9CDC;
-
 }
 
 .header__header-block_subtitle-text{
-
-
     font-size: 20px;
     font-weight: bold;
-
 }
-
 
 .header__header-text-block_text-subtitle-list{
     list-style: none;
@@ -146,40 +100,32 @@
 }
 
 .header__header-buttons-block{
-
     display: flex;
     gap: 25px;
-
 }
 
 
 .header__header-buttons-block_button{
     width: 150px;
     height: 45px;
-
     border-radius: 4px;
     border: 1px solid black;
     color: black;
     background-color: white;
-    
     transition: 0.5s;
-
     text-align: center;
     text-transform: uppercase;
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 400;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header__header-buttons-block_button:hover{
-
     color: white;
     background-color: #3E9CDC;
     border: 1px solid white;
     cursor: pointer;
-
 }

@@ -1,41 +1,25 @@
-
 *{
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
-
 }
 
-
-
 a{
-
     text-decoration: none;
     color: white;
-
-
 }
 
 body{
-
-
-
     color: white;
     font-size: 14px;
     font-family: Lato;
     font-weight: normal;
-
-
-    
 }
 
 .conteiner{
-
     min-width: 320px;
     max-width: 1170px;
     height: 100%;
     margin: 0 auto;
-
 }

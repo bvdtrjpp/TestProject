@@ -1,50 +1,32 @@
 main{
-
-    width: 100vw;
-    /* height: calc(100vh + 60.25em); */
     padding: 10vh 0;
-
     background: url('https://bvdtrjpp.github.io/TestProject/materials/main/main.background.svg') no-repeat;
     background-size: cover;
-
 }
 
 .main__align-items-block{
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    
     width: 100%;
     height: 100%;
 }
 
 .main__main-blocks{
-
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 80px;
-
     text-align: center;
 }
 
-
 .main__main-blocks_title-text-block_title{
-
     text-transform: uppercase;
-
     font-size: 2rem;
     font-family: Lato, Arial, Helvetica, sans-serif;
-
     margin-bottom: 30px;
-
 }
 
 .main__main-blocks_title-text-block_title_element{
@@ -52,63 +34,46 @@ main{
 }
 
 .main__main-blocks_title-text-block_subtitle{
-
     color: #BBBBBB;
-
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
-
 }
 
 .main__main-blocks_scheme-blocks{
     width: 100%;
-
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-
     margin-bottom: 80px;
 }
 
 .main__main-blocks_scheme-blocks_scheme-block{
-
-    position: relative;
-    
+    position: relative; 
 }
 
 .main__main-blocks_scheme-blocks_scheme-block_scheme-block-image{
-
     width: 100px;
     height: 100px;
-
     transition: 0.5s;
 }
 
 .main__main-blocks_scheme-blocks_scheme-block_scheme-block-image:hover{
-
     transform: scale(1.1);
     cursor: pointer;
-
 }
 
 .main__main-blocks_scheme-blocks_scheme-block_scheme-block-subtitle{
-
     position: absolute;
     left: -45%;
     width: 200px;
     margin-top: 20px;
-    
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 16px;
-    
-
 }
 
 .main__main-blocks_user-info-block_adaptive-input-block{
-
     display: grid;
-
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px;
     align-items: center;
@@ -116,9 +81,7 @@ main{
 }
 
 .main__main-blocks_user-info-block{
-
     width: 100%;
-
 }
 
 .main__main-blocks_user-info-block_adaptive-input-block_text-fields{
@@ -128,65 +91,45 @@ main{
 }
 
 .main__main-blocks_user-info-block_adaptive-input-block__input-item{
-
     width: 370px;
     height: 48px;
-
     background-color: rgba(61, 64, 80, 0.85);
-    
     border-radius: 3px;
     border: none;
     cursor: pointer;
     padding: 12px 0 12px 10px;
-
-    
-
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: white;
 }
 
-
-
-
 .main__main-blocks_user-info-block_user-type-of-system_item{
-
     background-color: rgba(39, 39, 51, 0.9, alpha);
     cursor: pointer;
-
 }
 
-
-
-
 #main__main-blocks_user-info-block_user-percent{
-
     cursor: pointer;
     width: 770px;
     height: 6px;
     background-color: rgba(255, 255, 255, 0.7, alpha);
     border: 1px solid white;
     border-radius: 5px;
-
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
 }
 
 input[type=range]::-webkit-slider-thumb {
-
     border: 1px solid #286690;
     height: 28px;
     width: 28px;
     background-color: #42A9ED;
     cursor: pointer;
-
-  }
+}
 
 .main__main-blocks_user-info-block_range-block{
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -194,14 +137,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .main__main-blocks_user-info-block_range-block_align-block{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
     gap: 10px;
-
 }
 
 .main__main-blocks_user-info-block_range-block_text-block{
@@ -211,34 +152,27 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 #main__main-blocks_user-info-block_adaptive-input-block__input-item_send-button{
-
     border-radius: 4px;
     border: 1px solid black;
     color: black;
     background-color: white;
     cursor: pointer;
-
     transition: 0.5s;
-
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-
 }
 
 #main__main-blocks_user-info-block_adaptive-input-block__input-item_send-button:hover{
-
     border-radius: 4px;
     border: 2px solid white;
     color: white;
     background-color: #3E9CDC;
     cursor: pointer;
-
 }
 
 .main__main-blocks_user-info-block_adaptive-input-block__input-item-file{
-
     display: block;
     width: 100%;
     height: 48px;
@@ -251,30 +185,21 @@ input[type=range]::-webkit-slider-thumb {
     align-items: center;
     border: 2px solid #3E9CDC;
     border-radius: 3px;
-
     font-family: Lato, Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
-
     transition: 0.5s;
 }
 
-
 .main__main-blocks_user-info-block_adaptive-input-block__input-item-file:hover{
-
     border-radius: 4px;
     border: 1px solid white;
     color: white;
     background-color: #3E9CDC;
     cursor: pointer;
-
 }
 
-
-
-
 #main__main-blocks_user-info-block_user-file{
-
     opacity: 0;
     height: 0;
     width: 0;
@@ -282,6 +207,4 @@ input[type=range]::-webkit-slider-thumb {
     overflow: hidden;
     padding: 0;
     margin: 0;
-
-
 }
