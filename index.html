@@ -14,6 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/materials/header/header.style.css">
+    <link rel="stylesheet" href="/materials/main/main.style.css">
+    <link rel="stylesheet" href="/materials/footer/footer.style.css">
+    <link rel="stylesheet" href="header.dropdown.menu.css">
+
+    <link rel="stylesheet" href="media.css">
+
 </head>
 <body>
 
@@ -34,6 +41,15 @@
                         <a href="#"><li class="header__navbar-block_navbar-menu_item">цены</li></a>
                         <a href="#"><li class="header__navbar-block_navbar-menu_item">оформить заказ</li></a>
                     </ul>
+                    <div class="header__navbar-block_dropdown">
+                        <button class="header__navbar-block_dropdown_button">МЕНЮ</button>
+                        <div class="header__navbar-block_dropdown-content">
+                          <a href="#">бизнес</a>
+                          <a href="#footer">о нас</a>
+                          <a href="#">цены</a>
+                          <a href="#">оформить заказ</a>
+                        </div>
+                      </div>
 
                 </div>
             </div>
@@ -150,32 +166,32 @@
                     </div>
 
                     <div class="main__main-blocks_user-info-block">
-
+                        <div class="conteiner">
                         <form action="#" method="POST" enctype="multipart/form-data">
 
                             <div class="main__main-blocks_user-info-block_adaptive-input-block">
                                 <div class="main__main-blocks_user-info-block_adaptive-input-block_text-fields">
-                                    <select name="main__main-blocks_user-info-block_adaptive-input-block_type-of-system" id="main__main-blocks_user-info-block_type-of-system" class="main__main-blocks_user-info-block_adaptive-input-block__input-item">
+                                    <select name="type-of-system" id="main__main-blocks_user-info-block_type-of-system" class="main__main-blocks_user-info-block_adaptive-input-block__input-item">
                                     <option selected disabled hidden>
                                         Выберите тип системы
                                     </option>
-                                    <option value="main__main-blocks_user-info-block_user-type-of-system_system-1">
+                                    <option value="system-1" class="main__main-blocks_user-info-block_user-type-of-system_item">
                                         system one
                                     </option>
-                                    <option value="main__main-blocks_user-info-block_user-type-of-system_system-2">
+                                    <option value="system-2" class="main__main-blocks_user-info-block_user-type-of-system_item">
                                         system two
                                     </option>
-                                    <option value="main__main-blocks_user-info-block_user-type-of-system_system-3">
+                                    <option value="system-3" class="main__main-blocks_user-info-block_user-type-of-system_item">
                                         system three
                                     </option>
-                                    <option value="main__main-blocks_user-info-block_user-type-of-system_system-4">
+                                    <option value="system-4" class="main__main-blocks_user-info-block_user-type-of-system_item">
                                         system four
                                     </option>
                                     
                                     </select>
 
-                                    <input type="email" name="main__main-blocks_user-info-block_adaptive-input-block_user-email" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" id="main__main-blocks_user-info-block_adaptive-input-block_user-email" placeholder="Ваш e-mail">
-                                    <input type="text" name="main__main-blocks_user-info-block_adaptive-input-block_user-name" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" id="main__main-blocks_user-info-block_adaptive-input-block_user-name"  placeholder="Ваше имя">
+                                    <input type="email" name="user-email" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" id="main__main-blocks_user-info-block_adaptive-input-block_user-email" placeholder="Ваш e-mail">
+                                    <input type="text" name="user-name" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" id="main__main-blocks_user-info-block_adaptive-input-block_user-name"  placeholder="Ваше имя">
                                     
                                 </div>
                                 <div class="main__main-blocks_user-info-block_range-block">
@@ -184,10 +200,10 @@
                                             <p class="main__main-blocks_user-info-block_range-block_subtitle">Sed ut perspiciatis, unde omnis iste natus</p>
                                             <p class="main__main-blocks_user-info-block_range-block_percent" id="range-block_percent">0%</p>
                                         </div>
-                                        <input type="range" name="main__main-blocks_user-info-block_user-range" id="main__main-blocks_user-info-block_user-percent"  onmousemove="showPrecent(this.value)" min="0" max="100" step="1" value="0">
+                                        <input type="range" name="user-range" id="main__main-blocks_user-info-block_user-percent"  onmousemove="showPrecent(this.value)" min="0" max="100" step="1" value="0">
                                     </div>
-                                    <div>
-                                        <input type="file" name="main__main-blocks_user-info-block_user-file" id="main__main-blocks_user-info-block_user-file" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" value="прикрепить файл">
+                                    <div style="width: 100%;">
+                                        <input type="file" name="user-file" id="main__main-blocks_user-info-block_user-file" class="main__main-blocks_user-info-block_adaptive-input-block__input-item" value="прикрепить файл">
                                         <span class="main__main-blocks_user-info-block_adaptive-input-block__input-item-file"><img src="/materials/main/file.submit.button.svg" alt="icon" height="20px" width="17px">Прикрепить файл</span>
                                     </div>
                                 </div>
@@ -202,6 +218,7 @@
                         </form>
 
                     </div>
+                </div>
                 </div>
             </div>
         </div>
