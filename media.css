@@ -521,7 +521,7 @@
     
     .conteiner{
 
-        width: 320px;
+        width: 280px;
   
 
     }
@@ -549,9 +549,12 @@
     .main__main-blocks_user-info-block_range-block,
     .main__main-blocks_user-info-block,
     .main__main-blocks_user-info-block_adaptive-input-block,
-    .main__main-blocks_user-info-block_adaptive-input-block__input-item{
-
-        width: 320px;
+    .main__main-blocks_user-info-block_adaptive-input-block__input-item,
+    #main__main-blocks_user-info-block_user-percent,
+    #main__main-blocks__file-button,
+    .main__main-blocks_user-info-block_adaptive-input-block__input-item-file
+    {
+        width: 280px;
 
     }
 
