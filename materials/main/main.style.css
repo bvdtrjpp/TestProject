@@ -187,14 +187,10 @@ input[type=range]::-webkit-slider-thumb {
 
 .main__main-blocks_user-info-block_range-block{
 
-   
-    
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-
-
-
+    align-items: center;
 }
 
 .main__main-blocks_user-info-block_range-block_align-block{
@@ -209,7 +205,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .main__main-blocks_user-info-block_range-block_text-block{
-
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
