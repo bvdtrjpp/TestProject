@@ -508,7 +508,9 @@
     .main__main-blocks_user-info-block_adaptive-input-block__input-item,
     #main__main-blocks_user-info-block_user-percent,
     #main__main-blocks__file-button,
-    .main__main-blocks_user-info-block_adaptive-input-block__input-item-file
+    .main__main-blocks_user-info-block_adaptive-input-block__input-item-file,
+    .main__main-blocks_user-info-block_range-block_align-block,
+    .main__main-blocks_user-info-block_range-block_text-block
     {
         width: 320px;
 
@@ -552,7 +554,9 @@
     .main__main-blocks_user-info-block_adaptive-input-block__input-item,
     #main__main-blocks_user-info-block_user-percent,
     #main__main-blocks__file-button,
-    .main__main-blocks_user-info-block_adaptive-input-block__input-item-file
+    .main__main-blocks_user-info-block_adaptive-input-block__input-item-file,
+    .main__main-blocks_user-info-block_range-block_align-block,
+    .main__main-blocks_user-info-block_range-block_text-block
     {
         width: 280px;
 
