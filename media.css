@@ -501,6 +501,16 @@
         justify-items: center;
     }
 
+    .main__main-blocks_user-info-block_adaptive-input-block_text-fields,
+    .main__main-blocks_user-info-block_range-block,
+    .main__main-blocks_user-info-block,
+    .main__main-blocks_user-info-block_adaptive-input-block,
+    .main__main-blocks_user-info-block_adaptive-input-block__input-item{
+
+        width: 320px;
+
+    }
+
     
 }
 
