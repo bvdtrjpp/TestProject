@@ -1,6 +1,5 @@
 main{
-    height: 100vh;
-    padding: 10vh 0;
+    padding: 20vh 0 10vh 0;
     background: url('https://bvdtrjpp.github.io/TestProject/materials/main/main.background.svg') no-repeat;
     background-size: cover;
 }
